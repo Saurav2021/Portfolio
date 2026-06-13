@@ -183,7 +183,7 @@ nav.stuck{background:rgba(4,1,15,.92);backdrop-filter:blur(20px);border-bottom:1
 /* ─ Hero ─ */
 #hero{
   position:relative;min-height:100vh;
-  display:flex;align-items:center;padding:120px 64px 80px;
+  display:flex;align-items:center;padding:120px 64px 200px;
   overflow:hidden;z-index:1
 }
 /* Hero-specific glow */
@@ -401,9 +401,11 @@ section{padding:100px 64px;position:relative;z-index:1}
   padding-top:12px;border-top:1px solid var(--b1)}
 .pst{font-family:var(--fm);font-size:.6rem;color:var(--di);padding:2px 7px;
   border:1px solid var(--b1);border-radius:4px}
-.pl{color:var(--cy);font-family:var(--fd);font-size:.78rem;font-weight:600;
-  text-decoration:none;display:flex;align-items:center;gap:4px;transition:gap .2s}
-.pl:hover{gap:8px}
+.pl{color:#000;font-family:var(--fd);font-size:.75rem;font-weight:700;
+  text-decoration:none;display:inline-flex;align-items:center;gap:6px;
+  background:linear-gradient(135deg,var(--cy),var(--bl));
+  padding:7px 14px;border-radius:8px;transition:all .25s;white-space:nowrap}
+.pl:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,245,200,.35);gap:10px}
 .sh{font-family:var(--fm);font-size:.68rem;color:var(--di);
   display:flex;align-items:center;gap:8px;margin-bottom:20px}
 .sh::after{content:"";flex:1;height:1px;background:var(--b1)}
@@ -670,10 +672,10 @@ footer{text-align:center;padding:24px 64px;border-top:1px solid var(--b1);
   <h2 class="s-h">Things I've <em>built</em></h2>
   <div class="sh">Drag to explore →</div>
   <div class="ps">
-    <div class="pc"><div class="pcg"></div><div class="pcn">01</div><div class="pc-i">🤖</div><div class="pc-tt">Real-Time Gender Classification & Alert System</div><p class="pc-d">Live CCTV surveillance with automated safety alerts. Sub-100ms alert latency. Flask MJPEG streaming dashboard.</p><div class="pc-bs"><span class="pb">Real-time</span><span class="pb">&lt;100ms</span><span class="pb">Production</span></div><div class="pc-f"><div style="display:flex;gap:4px"><span class="pst">OpenCV</span><span class="pst">Flask</span></div><a class="pl" href="https://github.com/Saurav2021" target="_blank">GitHub →</a></div></div>
+    <div class="pc"><div class="pcg"></div><div class="pcn">01</div><div class="pc-i">🤖</div><div class="pc-tt">Real-Time Gender Classification & Alert System</div><p class="pc-d">Live CCTV surveillance with automated safety alerts. Sub-100ms alert latency. Flask MJPEG streaming dashboard.</p><div class="pc-bs"><span class="pb">Real-time</span><span class="pb">&lt;100ms</span><span class="pb">Production</span></div><div class="pc-f"><div style="display:flex;gap:4px"><span class="pst">OpenCV</span><span class="pst">Flask</span></div><a class="pl" href="https://github.com/Saurav2021/Real-Time-Gender-Classification-Alert-System" target="_blank">GitHub →</a></div></div>
     <div class="pc"><div class="pcg"></div><div class="pcn">02</div><div class="pc-i">📊</div><div class="pc-tt">ML Employee Performance Predictor</div><p class="pc-d">RF + XGBoost ensemble at 92% accuracy. SHAP TreeExplainer top-8 drivers. Flask REST API + interactive dashboard.</p><div class="pc-bs"><span class="pb">92% Acc</span><span class="pb">SHAP</span><span class="pb">5-fold CV</span></div><div class="pc-f"><div style="display:flex;gap:4px"><span class="pst">XGBoost</span><span class="pst">SHAP</span></div><a class="pl" href="https://github.com/Saurav2021/Employee-performance-predictor" target="_blank">GitHub →</a></div></div>
-    <div class="pc"><div class="pcg"></div><div class="pcn">03</div><div class="pc-i">⚙️</div><div class="pc-tt">REST API Data Pipeline — Enterprise Automation</div><p class="pc-d">4-stage ETL with idempotent upserts, MD5 dedup, exponential backoff, HTTP classification, structured audit log.</p><div class="pc-bs"><span class="pb">Idempotent</span><span class="pb">O(log n)</span><span class="pb">Audit Trail</span></div><div class="pc-f"><div style="display:flex;gap:4px"><span class="pst">Python</span><span class="pst">SQLite</span></div><a class="pl" href="https://github.com/Saurav2021" target="_blank">GitHub →</a></div></div>
-    <div class="pc"><div class="pcg"></div><div class="pcn">04</div><div class="pc-i">📈</div><div class="pc-tt">Mobile Sales Analytics — Power BI Dashboard</div><p class="pc-d">Star schema, DAX KPI measures, 8 cross-filtered visuals including geo maps, funnel charts, and trend lines.</p><div class="pc-bs"><span class="pb">Star Schema</span><span class="pb">DAX</span><span class="pb">8 Visuals</span></div><div class="pc-f"><div style="display:flex;gap:4px"><span class="pst">Power BI</span><span class="pst">DAX</span></div><a class="pl" href="https://github.com/Saurav2021" target="_blank">GitHub →</a></div></div>
+    <div class="pc"><div class="pcg"></div><div class="pcn">03</div><div class="pc-i">⚙️</div><div class="pc-tt">REST API Data Pipeline — Enterprise Automation</div><p class="pc-d">4-stage ETL with idempotent upserts, MD5 dedup, exponential backoff, HTTP classification, structured audit log.</p><div class="pc-bs"><span class="pb">Idempotent</span><span class="pb">O(log n)</span><span class="pb">Audit Trail</span></div><div class="pc-f"><div style="display:flex;gap:4px"><span class="pst">Python</span><span class="pst">SQLite</span></div><a class="pl" href="https://github.com/Saurav2021/REST-API-Data-Pipeline" target="_blank">GitHub →</a></div></div>
+    <div class="pc"><div class="pcg"></div><div class="pcn">04</div><div class="pc-i">📈</div><div class="pc-tt">Mobile Sales Analytics — Power BI Dashboard</div><p class="pc-d">Star schema, DAX KPI measures, 8 cross-filtered visuals including geo maps, funnel charts, and trend lines.</p><div class="pc-bs"><span class="pb">Star Schema</span><span class="pb">DAX</span><span class="pb">8 Visuals</span></div><div class="pc-f"><div style="display:flex;gap:4px"><span class="pst">Power BI</span><span class="pst">DAX</span></div><a class="pl" href="https://github.com/Saurav2021/Mobile-Sales-Analytics-Power-BI-Dashboard" target="_blank">GitHub →</a></div></div>
     <div class="pc"><div class="pcg"></div><div class="pcn">05</div><div class="pc-i">📉</div><div class="pc-tt">Stock Price Prediction</div><p class="pc-d">Benchmarking Linear Regression, Random Forest, and LSTM on Yahoo Finance data. LSTM wins on MSE/RMSE.</p><div class="pc-bs"><span class="pb">LSTM Wins</span><span class="pb">MSE/RMSE</span></div><div class="pc-f"><div style="display:flex;gap:4px"><span class="pst">TensorFlow</span><span class="pst">LSTM</span></div><a class="pl" href="https://github.com/Saurav2021/stocks_price_prediction" target="_blank">GitHub →</a></div></div>
     <div class="pc"><div class="pcg"></div><div class="pcn">06</div><div class="pc-i">🏙️</div><div class="pc-tt">Smart City AI — Live Feed Analytics</div><p class="pc-d">Production at Patna ICCC. 200+ simultaneous feeds. BFS adaptive frame-buffer, IVMS/ITMS workflows at L&T.</p><div class="pc-bs"><span class="pb">200+ Feeds</span><span class="pb">−35% CPU</span><span class="pb">Production</span></div><div class="pc-f"><div style="display:flex;gap:4px"><span class="pst">YOLOv11</span><span class="pst">L&T</span></div><a class="pl" href="#">Deploy</a></div></div>
   </div>
